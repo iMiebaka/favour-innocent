@@ -122,7 +122,7 @@
               <h2>Wedding of</h2>
               <h1>Favour &amp; Innocent</h1>
               <h6>on</h6>
-              <h3>Saturday 1st April , 2024</h3>
+              <h3>Monday 1st April , 2024</h3>
               <h6>@</h6>
               <h3>Ede</h3>
             </hgroup>
@@ -188,15 +188,11 @@
 
     <script>
       const urlParams = new URLSearchParams(location.search);
-      let downloadProgramNow = false;
 
       for (const [key, value] of urlParams) {
         if(key == "download" && value =="program")
-        downloadProgramNow = true
+        document.getElementById("download-program").click();
       }
-
-      const downloadProgram = document.getElementById("download-program")
-      downloadProgramNow && downloadProgram.click();
     </script>
   </body>
 </html>
